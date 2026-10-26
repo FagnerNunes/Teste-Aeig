@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "node --env-file=.env --watch src/server.ts",
-    "calcular-juros": "node src/api/utils/calcularJuros.ts"
+    "calcular-juros": "node src/api/utils/calcularJuros.ts",
+    "generate:env": "node scripts/setup-env.js"
   },
   "keywords": ["express", "nodejs", "postgresql", "typescript", "api"],
   "author": "",

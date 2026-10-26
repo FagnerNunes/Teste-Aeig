@@ -1,17 +1,17 @@
 ### Como rodar o projeto
 
-1. Clonar o projeto na máquina
-2. Instalar as dependências do projeto com PNPM na versão 10.29.3
-3. Importe o arquivo json no postman para fazer testes/requisições [postman/AEIG-API.postman.json], o curl das requisições também estão disponíveis em [postman/aeig-api.curl.md]
-4. Rode a aplicação no terminal usando "pnpm dev"
+1. Clone o projeto na máquina
+2. Instale as dependências do projeto com PNPM na versão 10.29.3
+3. Rode o comando "pnpm generate:env" para gerar o .env e substitua as chaves
+4. Importe o arquivo json no postman para fazer testes/requisições [postman/AEIG-API.postman.json], o curl das requisições também estão disponíveis em [postman/aeig-api.curl.md]
+5. Rode a aplicação no terminal usando "pnpm dev"
 
-Obs.: Não é necessário criar o banco de dados, realizei esse teste com um db online (PostgreSQL)
+Obs.: Realizei esse teste com um db online (PostgreSQL) que ficará disponível até 30/10
 
 
 ### Validação da função calcularJuros
 
 Você pode rodar o comando "pnpm calcular-juros" no terminal para ver os resultados ou acessar o arquivo BUGS.md
-
 
 
 ### Principais decisões
