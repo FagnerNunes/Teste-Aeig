@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_postman_id": "590cb306-0ca4-4745-b3d9-098d76f134a9",
+    "name": "AEIG API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26295239"
+  },
+  "item": [
+    {
+      "name": "registrar associado",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nome\": \"Fagner\",\n    \"cpf\": \"786.948.300-19\",\n    \"valor_mensalidade\": 92.30\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/associados",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "associados"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "registrar cobranca",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cpf\": \"786.948.300-19\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/cobrancas",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "cobrancas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ver cobranca",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/cobrancas/5cf910a6-5fd8-402d-a52a-c08eccff4b24",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "cobrancas",
+            "5cf910a6-5fd8-402d-a52a-c08eccff4b24"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "webhook atualizar cobranca",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id_evento\": \"evt_000123\",\n  \"nosso_numero\": \"5cf910a6-5fd8-402d-a52a-c08eccff4b24\",\n  \"data_pagamento\": \"2026-10-15\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/webhooks/pagamento",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "webhooks",
+            "pagamento"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
