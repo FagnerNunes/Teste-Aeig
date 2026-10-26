@@ -2,7 +2,7 @@
 
 1. Clone o projeto na máquina
 2. Instale as dependências do projeto com PNPM na versão 10.29.3
-3. Rode o comando "pnpm generate:env" para gerar o .env e substitua as chaves
+3. Rode o comando "pnpm generate:env" para gerar o .env e substitua os campos pelas credenciais enviadas no privado
 4. Importe o arquivo json no postman para fazer testes/requisições [postman/AEIG-API.postman.json], o curl das requisições também estão disponíveis em [postman/aeig-api.curl.md]
 5. Rode a aplicação no terminal usando "pnpm dev"
 
